@@ -483,7 +483,7 @@ def Entropy(state, j):
 
 	A = RDM(state, j)
 
-	return np.trace(np.matmul(A, logm(A)))
+	return -np.trace(np.matmul(A, logm(A)))/np.log(2)
 
 
 

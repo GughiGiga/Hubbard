@@ -15,7 +15,8 @@ Vecs22 = [Data(2, 2, 'open', 0).get_eigvecs(u, 2, 2, 0) for u in U22]
 
 plt.scatter(U22, [Entropy(i, 0) for i in Vecs22])
 
-plt.show()
+plt.savefig('/export/ggigante/main/Hubbard_figures/4x4/Entropy.png')
+
 '''A24 = [Data(2, 4, i, 0.0, 0, periodic = False, u100 = True) for i in np.linspace(0.001, 100, 100)[:11]]
 A24periodic = [Data(2, 4, i, 0.0, 0, periodic = True, u100 = True) for i in np.linspace(0.001, 100, 100)[:11]]
 
